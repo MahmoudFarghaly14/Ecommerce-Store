@@ -1,0 +1,19 @@
+<header>
+    <div class="navbar navbar-dark bg-primary shadow-sm ">
+        <div class="navbar-brand align-item-center d-flex">
+            <i class="fa fa-shipping-fast">
+                <strong>Shop</strong>
+            </i>
+            <div class="form-group">
+                <input class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" type="text" placeholder="search products">
+            </div>
+            <span class="fas fa-search search-icon"></span>
+          
+        </div>
+        <button routerLink="card" class="btn btn-primary">
+            <i class="fa fa-shopping-cart" style="font-size:36px"></i>
+            <div class="badge bg-danger">{{totalItem}}</div>
+        </button>
+
+    </div>
+</header>
